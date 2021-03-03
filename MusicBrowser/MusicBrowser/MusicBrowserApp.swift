@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct MusicBrowserApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                store: Store(
+                    initialState: AppState(),
+                    reducer: appReducer,
+                    environment: AppEnvironment(
+                        client: .live,
+                        mainQueue:  DispatchQueue.main.eraseToAnyScheduler()
+                    )
+                )
+            )
         }
     }
 }

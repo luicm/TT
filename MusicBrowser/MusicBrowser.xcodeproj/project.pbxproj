@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF903FD325EED7930030B058 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FF903FD225EED7930030B058 /* ComposableArchitecture */; };
+		FF9B4F2D25EEEA8800E7C613 /* AlbumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9B4F2C25EEEA8800E7C613 /* AlbumnCell.swift */; };
+		FF9B4F3325EEF59300E7C613 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF9B4F3225EEF59300E7C613 /* Kingfisher */; };
 		FFE1FF6425EAE8A500B52F97 /* MusicBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF6325EAE8A500B52F97 /* MusicBrowserApp.swift */; };
 		FFE1FF6625EAE8A500B52F97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF6525EAE8A500B52F97 /* ContentView.swift */; };
 		FFE1FF6825EAE8A700B52F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE1FF6725EAE8A700B52F97 /* Assets.xcassets */; };
 		FFE1FF6B25EAE8A700B52F97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE1FF6A25EAE8A700B52F97 /* Preview Assets.xcassets */; };
 		FFE1FF7625EAE8A700B52F97 /* MusicBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF7525EAE8A700B52F97 /* MusicBrowserTests.swift */; };
 		FFE1FF8125EAE8A700B52F97 /* MusicBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF8025EAE8A700B52F97 /* MusicBrowserUITests.swift */; };
-		FFE1FF9325EAEA8E00B52F97 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FFE1FF9225EAEA8E00B52F97 /* ComposableArchitecture */; };
+		FFE1FF9B25EAEF8800B52F97 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF9A25EAEF8800B52F97 /* AppState.swift */; };
+		FFE1FFA025EAF45300B52F97 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF9F25EAF45300B52F97 /* Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF9B4F2C25EEEA8800E7C613 /* AlbumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumnCell.swift; sourceTree = "<group>"; };
 		FFE1FF6025EAE8A500B52F97 /* MusicBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE1FF6325EAE8A500B52F97 /* MusicBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBrowserApp.swift; sourceTree = "<group>"; };
 		FFE1FF6525EAE8A500B52F97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +51,8 @@
 		FFE1FF7C25EAE8A700B52F97 /* MusicBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE1FF8025EAE8A700B52F97 /* MusicBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBrowserUITests.swift; sourceTree = "<group>"; };
 		FFE1FF8225EAE8A700B52F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE1FF9A25EAEF8800B52F97 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		FFE1FF9F25EAF45300B52F97 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE1FF9325EAEA8E00B52F97 /* ComposableArchitecture in Frameworks */,
+				FF9B4F3325EEF59300E7C613 /* Kingfisher in Frameworks */,
+				FF903FD325EED7930030B058 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +107,12 @@
 			children = (
 				FFE1FF6325EAE8A500B52F97 /* MusicBrowserApp.swift */,
 				FFE1FF6525EAE8A500B52F97 /* ContentView.swift */,
+				FF9B4F2C25EEEA8800E7C613 /* AlbumnCell.swift */,
 				FFE1FF6725EAE8A700B52F97 /* Assets.xcassets */,
 				FFE1FF6C25EAE8A700B52F97 /* Info.plist */,
 				FFE1FF6925EAE8A700B52F97 /* Preview Content */,
+				FFE1FF9A25EAEF8800B52F97 /* AppState.swift */,
+				FFE1FF9F25EAF45300B52F97 /* Music.swift */,
 			);
 			path = MusicBrowser;
 			sourceTree = "<group>";
@@ -149,7 +160,8 @@
 			);
 			name = MusicBrowser;
 			packageProductDependencies = (
-				FFE1FF9225EAEA8E00B52F97 /* ComposableArchitecture */,
+				FF903FD225EED7930030B058 /* ComposableArchitecture */,
+				FF9B4F3225EEF59300E7C613 /* Kingfisher */,
 			);
 			productName = MusicBrowser;
 			productReference = FFE1FF6025EAE8A500B52F97 /* MusicBrowser.app */;
@@ -223,7 +235,8 @@
 			);
 			mainGroup = FFE1FF5725EAE8A500B52F97;
 			packageReferences = (
-				FFE1FF9125EAEA8E00B52F97 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				FF903FD125EED7930030B058 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				FF9B4F3125EEF59300E7C613 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FFE1FF6125EAE8A500B52F97 /* Products */;
 			projectDirPath = "";
@@ -267,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE1FF9B25EAEF8800B52F97 /* AppState.swift in Sources */,
 				FFE1FF6625EAE8A500B52F97 /* ContentView.swift in Sources */,
+				FF9B4F2D25EEEA8800E7C613 /* AlbumnCell.swift in Sources */,
 				FFE1FF6425EAE8A500B52F97 /* MusicBrowserApp.swift in Sources */,
+				FFE1FFA025EAF45300B52F97 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +606,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FFE1FF9125EAEA8E00B52F97 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+		FF903FD125EED7930030B058 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
@@ -598,13 +614,26 @@
 				minimumVersion = 0.15.0;
 			};
 		};
+		FF9B4F3125EEF59300E7C613 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FFE1FF9225EAEA8E00B52F97 /* ComposableArchitecture */ = {
+		FF903FD225EED7930030B058 /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FFE1FF9125EAEA8E00B52F97 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			package = FF903FD125EED7930030B058 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		FF9B4F3225EEF59300E7C613 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF9B4F3125EEF59300E7C613 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
