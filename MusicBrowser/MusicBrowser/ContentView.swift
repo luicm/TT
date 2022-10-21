@@ -14,26 +14,22 @@ struct ContentView: View {
     
     var body: some View {
         WithViewStore(self.store) { viewStore in
-            VStack {
-                HStack {
-                  Image(systemName: "magnifyingglass")
-                  TextField(
-                    "Looking for ..."
-                    ,
-                    text: viewStore.binding(
-                        get: { $0.searchQuery }, send: AppAction.searchQueryChanged)
-                  )
-                  .textFieldStyle(RoundedBorderTextFieldStyle())
-                  .autocapitalization(.none)
-                  .disableAutocorrection(true)
-                }
-                .padding([.leading, .trailing], 16)
-                
-                List(viewStore.orderedAlbumns) {
-                    AlbumnCell(albumn: $0)
+            NavigationView {
+                VStack {
+                    List(viewStore.orderedAlbumns) {
+                        AlbumnCell(albumn: $0)
                     }
-                    .padding()
-            }.onAppear { viewStore.send(.loadAlbums) }
+                    .listStyle(.plain)
+                }
+            }
+            .searchable(
+                text: viewStore.binding(
+                get: { $0.searchQuery },
+                send: AppAction.searchQueryChanged
+            ),
+                prompt: Text("Looking for ...")
+            )
+            .task { viewStore.send(.loadAlbums) }
         }
     }
 }
@@ -52,3 +48,15 @@ struct ContentView_Previews: PreviewProvider {
         )
     }
 }
+
+
+//struct SearchWithList: View {
+//    @State private var searchString = ""
+//    @State private var courses = DTCourse.sample
+//    var body: some View {
+//        NavigationView {
+//            List(courses) { course in
+//                Text(course.title) .font(.title)
+//            }
+//            .searchable(text: $searchString)
+//            .onChange(of: searchString, perform: { newValue in if newValue.isEmpty { courses = DTCourse.sample } else { courses = DTCourse.sample.filter { $0.title.lowercased().hasPrefix(searchString.lowercased())} } }) .navigationTitle("DevTechie.com") } } }
