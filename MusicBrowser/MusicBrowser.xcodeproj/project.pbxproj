@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FF903FD325EED7930030B058 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FF903FD225EED7930030B058 /* ComposableArchitecture */; };
 		FF9B4F2D25EEEA8800E7C613 /* AlbumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9B4F2C25EEEA8800E7C613 /* AlbumnCell.swift */; };
-		FF9B4F3325EEF59300E7C613 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF9B4F3225EEF59300E7C613 /* Kingfisher */; };
 		FFE1FF6425EAE8A500B52F97 /* MusicBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF6325EAE8A500B52F97 /* MusicBrowserApp.swift */; };
 		FFE1FF6625EAE8A500B52F97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF6525EAE8A500B52F97 /* ContentView.swift */; };
 		FFE1FF6825EAE8A700B52F97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE1FF6725EAE8A700B52F97 /* Assets.xcassets */; };
@@ -60,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9B4F3325EEF59300E7C613 /* Kingfisher in Frameworks */,
 				FF903FD325EED7930030B058 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,7 +159,6 @@
 			name = MusicBrowser;
 			packageProductDependencies = (
 				FF903FD225EED7930030B058 /* ComposableArchitecture */,
-				FF9B4F3225EEF59300E7C613 /* Kingfisher */,
 			);
 			productName = MusicBrowser;
 			productReference = FFE1FF6025EAE8A500B52F97 /* MusicBrowser.app */;
@@ -236,7 +233,6 @@
 			mainGroup = FFE1FF5725EAE8A500B52F97;
 			packageReferences = (
 				FF903FD125EED7930030B058 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				FF9B4F3125EEF59300E7C613 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = FFE1FF6125EAE8A500B52F97 /* Products */;
 			projectDirPath = "";
@@ -614,14 +610,6 @@
 				minimumVersion = 0.15.0;
 			};
 		};
-		FF9B4F3125EEF59300E7C613 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.1.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -629,11 +617,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FF903FD125EED7930030B058 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
-		};
-		FF9B4F3225EEF59300E7C613 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FF9B4F3125EEF59300E7C613 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
