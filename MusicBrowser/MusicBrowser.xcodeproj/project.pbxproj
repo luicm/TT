@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDB9AA362902952500910A12 /* MusicClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB9AA352902952500910A12 /* MusicClient.swift */; };
 		FF903FD325EED7930030B058 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FF903FD225EED7930030B058 /* ComposableArchitecture */; };
 		FF9B4F2D25EEEA8800E7C613 /* AlbumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9B4F2C25EEEA8800E7C613 /* AlbumnCell.swift */; };
 		FFE1FF6425EAE8A500B52F97 /* MusicBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF6325EAE8A500B52F97 /* MusicBrowserApp.swift */; };
@@ -15,7 +16,7 @@
 		FFE1FF6B25EAE8A700B52F97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE1FF6A25EAE8A700B52F97 /* Preview Assets.xcassets */; };
 		FFE1FF7625EAE8A700B52F97 /* MusicBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF7525EAE8A700B52F97 /* MusicBrowserTests.swift */; };
 		FFE1FF8125EAE8A700B52F97 /* MusicBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF8025EAE8A700B52F97 /* MusicBrowserUITests.swift */; };
-		FFE1FF9B25EAEF8800B52F97 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF9A25EAEF8800B52F97 /* AppState.swift */; };
+		FFE1FF9B25EAEF8800B52F97 /* MusicBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF9A25EAEF8800B52F97 /* MusicBrowser.swift */; };
 		FFE1FFA025EAF45300B52F97 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1FF9F25EAF45300B52F97 /* Music.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BDB9AA352902952500910A12 /* MusicClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicClient.swift; sourceTree = "<group>"; };
 		FF9B4F2C25EEEA8800E7C613 /* AlbumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumnCell.swift; sourceTree = "<group>"; };
 		FFE1FF6025EAE8A500B52F97 /* MusicBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE1FF6325EAE8A500B52F97 /* MusicBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBrowserApp.swift; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		FFE1FF7C25EAE8A700B52F97 /* MusicBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE1FF8025EAE8A700B52F97 /* MusicBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBrowserUITests.swift; sourceTree = "<group>"; };
 		FFE1FF8225EAE8A700B52F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFE1FF9A25EAEF8800B52F97 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		FFE1FF9A25EAEF8800B52F97 /* MusicBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicBrowser.swift; sourceTree = "<group>"; };
 		FFE1FF9F25EAF45300B52F97 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,14 +105,15 @@
 		FFE1FF6225EAE8A500B52F97 /* MusicBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				FFE1FF6325EAE8A500B52F97 /* MusicBrowserApp.swift */,
-				FFE1FF6525EAE8A500B52F97 /* ContentView.swift */,
-				FF9B4F2C25EEEA8800E7C613 /* AlbumnCell.swift */,
-				FFE1FF6725EAE8A700B52F97 /* Assets.xcassets */,
 				FFE1FF6C25EAE8A700B52F97 /* Info.plist */,
-				FFE1FF6925EAE8A700B52F97 /* Preview Content */,
-				FFE1FF9A25EAEF8800B52F97 /* AppState.swift */,
+				FF9B4F2C25EEEA8800E7C613 /* AlbumnCell.swift */,
+				FFE1FF6525EAE8A500B52F97 /* ContentView.swift */,
 				FFE1FF9F25EAF45300B52F97 /* Music.swift */,
+				FFE1FF9A25EAEF8800B52F97 /* MusicBrowser.swift */,
+				FFE1FF6325EAE8A500B52F97 /* MusicBrowserApp.swift */,
+				BDB9AA352902952500910A12 /* MusicClient.swift */,
+				FFE1FF6725EAE8A700B52F97 /* Assets.xcassets */,
+				FFE1FF6925EAE8A700B52F97 /* Preview Content */,
 			);
 			path = MusicBrowser;
 			sourceTree = "<group>";
@@ -276,10 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE1FF9B25EAEF8800B52F97 /* AppState.swift in Sources */,
+				FFE1FF9B25EAEF8800B52F97 /* MusicBrowser.swift in Sources */,
 				FFE1FF6625EAE8A500B52F97 /* ContentView.swift in Sources */,
 				FF9B4F2D25EEEA8800E7C613 /* AlbumnCell.swift in Sources */,
 				FFE1FF6425EAE8A500B52F97 /* MusicBrowserApp.swift in Sources */,
+				BDB9AA362902952500910A12 /* MusicClient.swift in Sources */,
 				FFE1FFA025EAF45300B52F97 /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,7 +611,7 @@
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.15.0;
+				minimumVersion = 0.43.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

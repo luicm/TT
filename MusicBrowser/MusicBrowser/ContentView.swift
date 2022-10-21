@@ -1,16 +1,10 @@
-//
-//  ContentView.swift
-//  MusicBrowser
-//
-//  Created by Luisa Cruz Molina on 27.02.21.
-//
 
 import SwiftUI
 import ComposableArchitecture
 
 struct ContentView: View {
     
-    let store: Store<AppState, AppAction>
+    let store: StoreOf<MusicBrowser>
     
     var body: some View {
         WithViewStore(self.store) { viewStore in
@@ -25,7 +19,7 @@ struct ContentView: View {
             .searchable(
                 text: viewStore.binding(
                 get: { $0.searchQuery },
-                send: AppAction.searchQueryChanged
+                send: MusicBrowser.Action.searchQueryChanged
             ),
                 prompt: Text("Looking for ...")
             )
@@ -37,26 +31,10 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(
-            store: Store(
-                initialState: AppState(),
-                reducer: appReducer,
-                environment: AppEnvironment(
-                    client: .live,
-                    mainQueue: DispatchQueue.main.eraseToAnyScheduler()
-                )
+            store: .init(
+                initialState: MusicBrowser.State(),
+                reducer: MusicBrowser()
             )
         )
     }
 }
-
-
-//struct SearchWithList: View {
-//    @State private var searchString = ""
-//    @State private var courses = DTCourse.sample
-//    var body: some View {
-//        NavigationView {
-//            List(courses) { course in
-//                Text(course.title) .font(.title)
-//            }
-//            .searchable(text: $searchString)
-//            .onChange(of: searchString, perform: { newValue in if newValue.isEmpty { courses = DTCourse.sample } else { courses = DTCourse.sample.filter { $0.title.lowercased().hasPrefix(searchString.lowercased())} } }) .navigationTitle("DevTechie.com") } } }

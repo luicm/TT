@@ -1,9 +1,3 @@
-//
-//  AlbumnCell.swift
-//  MusicBrowser
-//
-//  Created by Luisa Cruz Molina on 02.03.21.
-//
 
 import SwiftUI
 
